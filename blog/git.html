@@ -1,0 +1,95 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <title>Post 1 - On Git</title>
+  <link rel="icon" href="../imgs/DHLOGO.jpg" type="image/jpg" sizes="16x16">
+</head>
+<!-- The header contains the logo image and a quote section   -->
+<body>
+<div id="header">
+  <table>
+      <tr>
+        <td>
+          <div id="logo">
+          <img src="../imgs/bloglogo3.png" alt="Blog Logo">
+          </div>
+        </td>
+        <td>
+          <div id="quote">
+          <h1><strong>Quote of the Week</strong></h1>
+          <p>"The Journey of a thousand miles begins with a single step." </p><p><em>-Lao Tzu</em></p>
+          </div>
+        </td>
+      </tr>
+  </table>
+</div>
+
+<!-- the body contains an accordion navigation bar here-->
+  <table>
+    <tr>
+      <td>
+        <div class="nav">
+        <a href="http://davidhostios.github.io/blog/index">Blog Home</a><br>
+        <a href="git.html">Post 1</a><br>
+        <a href="css-concepts.html">Post 2</a><br>
+        <a href="arrays_and_hashes.html">Post 3</a><br>
+        <a href="enumerable-methods.html">Post 4</a><br>
+        <a href="ruby-classes.html">Post 5</a><br>
+        <a href="javascript.html">Post 6</a><br>
+        <a href="git.html">Post 7</a><br>
+        <a href="http://davidhostios.github.io">Home</a>
+
+        </div>
+      </td>
+<!-- and a body of text as a welcoming message -->
+      <td>
+      <div class="main-body">
+        <h1>Post 1 - On Git</h1>
+        <p>
+         Ok, so here is the rundown of the things that I have learned so far - Git, Github (not the same thing), Version Control Systems, a whole bunch of new commands to use on all that junk, More about DBC, I got to meet some of the nice people I get to hang out with the next half of a year, forking, cloning, tracking changes, how to do more stuff on the command line, and miscellaneous other magic. 
+        </p>
+        <h3>Meat and Potatoes</h3>
+        <h5>What are we doing?</h5>
+        <p>What we are doing is using the command line to set up and use a parallel set of files on the internet that comprise some particular type of code project. This one 
+        (that you're reading now) is a website in HTML. </p>
+        <h5>What are the benefits of Version Control?</h5>
+        <p>We do this by using a system called Git that works in conjunction with Github (online) to form what's called a Version Control System. Version control is a non-destructive method of working on a project, which means that if you can learn to apply it correctly, once you get a working product, you ought to be able to maintain its functionality while adding improvements indefinitely. If you're working on an Open Source Project, chances are it's a product of a VCS. </p>
+        <h5>What does Open Source mean?</h5>
+        <p>That's a good question. I'm glad you asked.</p>
+        <p>Open Source Projects are just a bunch of files in one place to be free to everyone's access.</p>
+        <h5>How does Git help you keep track of changes?</h5>
+        <h6>TRACK===>ADD===>COMMIT</h6>
+        <p>Each time you make a change to a file (hopefully working on your own branch - which is exactly what it sounds like - as not to disturb the master copy) Git will automatically be able to TRACK that something has changed.
+        The fact that a change is being tracked in no way means that it is saved.</p>
+        <p>To ADD changes to be COMMITTED means you use the 
+        git add "put the name of the file here - no quotes needed" 
+        command to tell Git "I'm happy with what I just did and I want to make sure that the next time I save, these changes are added." </p>
+        <p>To COMMIT your changes means to save that particular version of your project. It's like having save states on a video game. You can revert to the past few couple versions of commits in case you really screw up using 
+        git reset --soft HEAD^ (~HEAD3, ~HEAD4, etc. for incrementally older versions. Just plain HEAD is the current version)
+        Cool, right? I know, right?</p>
+        <h5>Why use Github to store your code?</h5>
+        <p>Say you just rocked putting together a sweet blog post about what you learned this week and you want to make it available for others to clone to their systems and make their own changes from there. Where do you put it to give the world access? That's where Github comes in.</p>
+        <p> The various files and directories that comprise your project also live on Github, where the best-functioning version of your project lives. The version on Github should always work because you can test and add only the files that worked on a cloned version before integrating them into the actual project.</p>
+        <p>You make changes to a project using Sublime and the terminal command line ---> Git tracks changes added and committed ---> Github houses the best working version of the project.</p>
+        <h3>MIND=BLOWN</h3>
+        <p>P.S. I found a sweet cheatsheet full of useful git commands at https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf</p>
+      </div>
+      
+      </td>
+    </tr>
+  </table>
+    
+  <div class="footer">
+      <p>
+        <a href="https://github.com/davidhostios"><img src="../imgs/githublogo-sized.png" alt="GitHub Logo"/></a>
+          <a href="https://twitter.com/davidhostios"><img src="../imgs/twitterlogo-resized.png" alt="Twitter Logo"/></a>
+          <a href="https://www.linkedin.com/in/david-hostios-42620121?trk=hp-identity-name"><img src="../imgs/linkedinlogo-resized.png" alt="LinkedIn Logo"/></a>
+      </p>
+    <p>&copy; David Hostios 2016</p>
+  </div>
+
+</body>
+</html>

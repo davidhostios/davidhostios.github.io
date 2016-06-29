@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<link rel="icon" href="../imgs/DHLOGO.jpg" type="image/jpg" sizes="16x16">
+	<title>David and the Super Sweet, Totally Awesome, Wonderful, Magical, Very Cool, Never Dull Blog</title>
+</head>
+<!-- The header contains the logo image and a quote section 	-->
+<body>
+<div id="header">
+	<table>
+			<tr>
+				<td>
+					<div id="logo">
+					<img src="../imgs/bloglogo3.png" alt="Blog Logo">
+					</div>
+				</td>
+				<td>
+					<div id="quote">
+					<h1><strong>Quote of the Week</strong></h1>
+					<p>"The Journey of a thousand miles begins with a single step." </p><p><em>-Lao Tzu</em></p>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>
+
+<!-- the body contains an accordion navigation bar here-->
+	<table>
+		<tr>
+			<td>
+				<div class="nav">
+				<a href="http://davidhostios.github.io/blog/index">Blog Home</a><br>
+				<a href="git.html">Post 1</a><br>
+				<a href="css-concepts.html">Post 2</a><br>
+				<a href="arrays_and_hashes.html">Post 3</a><br>
+				<a href="enumerable-methods.html">Post 4</a><br>
+				<a href="ruby-classes.html">Post 5</a><br>
+				<a href="javascript.html">Post 6</a><br>
+				<a href="git.html">Post 7</a><br>
+				<a href="http://davidhostios.github.io">Home</a>
+
+				</div>
+			</td>
+<!-- and a body of text as a welcoming message -->
+			<td>
+			<div class="main-body">
+				<h1>Post 4 - On Enumerable Method Map</h1>
+				<p>To understand Enumerable method map, you first have to get that Enumerable is a class that has a bunch of built in <em>collection related behaviors.</em>Another thing to know is that these methods often pair with <em>each.</em>
+	      		</p>
+	      		<p>
+	          	The map method is one of the most powerful collection operations you can use in Ruby. Map will always result in an array. So, for instance, if you had a list and you wanted to do some formatting (which would have been useful to the author this week...), you could use map like this...
+	      		</p>
+	      		<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333333">&gt;</span> grocery_list <span style="color: #333333">=</span> <span style="color: #DD2200; background-color: #fff0f0">%w{ diapers wipes formula beer }</span>
+<span style="color: #333333">=&gt;</span> <span style="color: #333333">[</span><span style="background-color: #fff0f0">&quot;diapers&quot;</span>, <span style="background-color: #fff0f0">&quot;wipes&quot;</span>, <span style="background-color: #fff0f0">&quot;formula&quot;</span>, <span style="background-color: #fff0f0">&quot;beer&quot;</span><span style="color: #333333">]</span>
+<span style="color: #333333">&gt;</span> grocery_list<span style="color: #333333">.</span>map {<span style="color: #333333">|</span>grocery_list<span style="color: #333333">|</span> grocery_list<span style="color: #333333">.</span>upcase}
+<span style="color: #333333">=&gt;</span> <span style="color: #333333">[</span><span style="background-color: #fff0f0">&quot;DIAPERS&quot;</span>, <span style="background-color: #fff0f0">&quot;WIPES&quot;</span>, <span style="background-color: #fff0f0">&quot;FORMULA&quot;</span>, <span style="background-color: #fff0f0">&quot;BEER&quot;</span><span style="color: #333333">]</span>
+</pre></div>
+
+			<p>As you can see, after getting diapers, wipes, and formula, sometimes it is necessary to get beer.</p>
+			<p>Seriously though, the new array is the same size as the original but we used map to <em>create a new object.</em> In this way, it differs from .each.</p>
+			<p>You gotta be careful when you use .map because if your code block that you execute contains a puts (kernel method that puts a string on a new line) it will evaluate to nil. Which isn't terrible, but not likely what we are trying to do.</p><p>There also exist the map! version of this method, but it may not be logically useful for much more than formatting an existing array (as opposed to like a range of numbers or something).</p>
+
+			<p>In summation, the Enumerable map method is useful for effecting a collection of information and creating a new object. When I say it like that, it doesn't sound like much, but foreal it's pretty handy.</p>
+
+			<h1>Happy Coding</h1>
+			</div>
+			
+			</td>
+		</tr>
+	</table>
+		
+	<div class="footer">
+			<p>
+				<a href="https://github.com/davidhostios"><img src="../imgs/githublogo-sized.png" alt="GitHub Logo"/></a>
+  				<a href="https://twitter.com/davidhostios"><img src="../imgs/twitterlogo-resized.png" alt="Twitter Logo"/></a>
+  				<a href="https://www.linkedin.com/in/david-hostios-42620121?trk=hp-identity-name"><img src="../imgs/linkedinlogo-resized.png" alt="LinkedIn Logo"/></a>
+			</p>
+		<p>&copy; David Hostios 2016</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<link rel="icon" href="../imgs/DHLOGO.jpg" type="image/jpg" sizes="16x16">
+	<title>David and the Super Sweet, Totally Awesome, Wonderful, Magical, Very Cool, Never Dull Blog</title>
+</head>
+<!-- The header contains the logo image and a quote section 	-->
+<body>
+<div id="header">
+	<table>
+			<tr>
+				<td>
+					<div id="logo">
+					<img src="../imgs/bloglogo3.png" alt="Blog Logo">
+					</div>
+				</td>
+				<td>
+					<div id="quote">
+					<h1><strong>Quote of the Week</strong></h1>
+					<p>"The Journey of a thousand miles begins with a single step." </p><p><em>-Lao Tzu</em></p>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>
+
+<!-- the body contains an accordion navigation bar here-->
+	<table>
+		<tr>
+			<td>
+				<div class="nav">
+				<a href="http://davidhostios.github.io/blog/index">Blog Home</a><br>
+				<a href="git.html">Post 1</a><br>
+				<a href="css-concepts.html">Post 2</a><br>
+				<a href="arrays_and_hashes.html">Post 3</a><br>
+				<a href="enumerable-methods.html">Post 4</a><br>
+				<a href="ruby-classes.html">Post 5</a><br>
+				<a href="javascript.html">Post 6</a><br>
+				<a href="git.html">Post 7</a><br>
+				<a href="http://davidhostios.github.io">Home</a>
+
+				</div>
+			</td>
+<!-- and a body of text as a welcoming message -->
+			<td>
+			<div class="main-body">
+				<h1>Post 3 - On Arrays and Hashes</h1>
+				<p>So today's lesson deals with how we store and recall information in Ruby.
+				One way to do it is in an ordered list called an array. 
+				Another way to do it is with a series of key/value pairs that act like a dictionary. Let's take a look at some differences and similarities...
+	      		</p>
+	      		<h1>Arrays</h1>
+	      		<p>
+	        Arrays are just ordered lists like 1, 2, 3 or biscuits, gravy, fried_okra. Or even 1, gravy, 3. 
+	      		</p>
+	      		<p>When you write them in Ruby, they look like this...</p>
+	      		<div class="snippet"style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">sweet_array <span style="color: #333333">=</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">0</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">]</span>
+				</pre></div>
+				<p>So this is just a very simple example that sets sweet_array equal to an ordered list with the index value as the integer in that slot. </p>
+				<p>To call the variable at index 2, you would say...</p>
+				<div class="snippet" style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">sweet_array <span style="color: #333333">=</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">]</span>
+				<span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">2</span>
+				</pre></div>
+				<p>Arrays are most useful when need to select an onject from a consistent, consecutive index.</p>
+				<h1>Hashes</h1>
+				<p>Hashes are basically lists of key/value pairs where the keys point to the value. So like an array can say biscuit, but a hash can say breakfast is a biscuit.</p>
+				<p>While arrays use [], hashes use {}, like so...</p>
+				<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">sweet_hash <span style="color: #333333">=</span> {<span style="background-color: #fff0f0">&quot;key 1&quot;</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;value 1&quot;</span>,
+			 <span style="background-color: #fff0f0">&quot;key 2&quot;</span> <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;value 2&quot;</span>,
+			 <span style="background-color: #fff0f0">&quot;key 3&quot;</span> <span style="color: #333333">+.</span> <span style="background-color: #fff0f0">&quot;value 3&quot;</span>
+			 }
+			</pre></div>
+			<p>You can recall a certain value using</p>
+			<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">first_value <span style="color: #333333">=</span> sweet_hash<span style="color: #333333">[</span><span style="background-color: #fff0f0">&quot;key 1&quot;</span><span style="color: #333333">]</span>
+<span style="color: #333333">==&gt;</span><span style="background-color: #fff0f0">&quot;value 1&quot;</span>
+</pre></div>
+
+<h1>The Takeaway</h1>
+<p>So there are at least 2 different ways to store and retrieve information, and both are explained in most simple terms above.</p>
+
+
+
+			</div>
+			
+			</td>
+		</tr>
+	</table>
+		
+	<div class="footer">
+			<p>
+				<a href="https://github.com/davidhostios"><img src="../imgs/githublogo-sized.png" alt="GitHub Logo"/></a>
+  				<a href="https://twitter.com/davidhostios"><img src="../imgs/twitterlogo-resized.png" alt="Twitter Logo"/></a>
+  				<a href="https://www.linkedin.com/in/david-hostios-42620121?trk=hp-identity-name"><img src="../imgs/linkedinlogo-resized.png" alt="LinkedIn Logo"/></a>
+			</p>
+		<p>&copy; David Hostios 2016</p>
+	</div>
+
+</body>
+</html>

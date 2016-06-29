@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<link rel="icon" href="../imgs/DHLOGO.jpg" type="image/jpg" sizes="16x16">
+	<title>David and the Super Sweet, Totally Awesome, Wonderful, Magical, Very Cool, Never Dull Blog</title>
+</head>
+<!-- The header contains the logo image and a quote section 	-->
+<body>
+<div id="header">
+	<table>
+			<tr>
+				<td>
+					<div id="logo">
+					<img src="../imgs/bloglogo3.png" alt="Blog Logo">
+					</div>
+				</td>
+				<td>
+					<div id="quote">
+					<h1><strong>Quote of the Week</strong></h1>
+					<p>"The Journey of a thousand miles begins with a single step." </p><p><em>-Lao Tzu</em></p>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>
+
+<!-- the body contains an accordion navigation bar here-->
+	<table>
+		<tr>
+			<td>
+				<div class="nav">
+				<a href="http://davidhostios.github.io/blog/index">Blog Home</a><br>
+				<a href="git.html">Post 1</a><br>
+				<a href="css-concepts.html">Post 2</a><br>
+				<a href="arrays_and_hashes.html">Post 3</a><br>
+				<a href="enumerable-methods.html">Post 4</a><br>
+				<a href="ruby-classes.html">Post 5</a><br>
+				<a href="javascript.html">Post 6</a><br>
+				<a href="git.html">Post 7</a><br>
+				<a href="http://davidhostios.github.io">Home</a>
+
+				</div>
+			</td>
+<!-- and a body of text as a welcoming message -->
+			<td>
+			<div class="main-body">
+				<h1> Post 2 - On Positioning</h1>
+				<p>Static (Normal)<br>Relative<br>Absolute<br>Fixed</p>
+				<p>These four properties control the way you can set 
+				the initial position of your HTML elements when you are 
+				building a web page.</p>
+				<p>To get anything done, you have to understand that these are moved by manipulating the offset properties top, bottom, left, and right, so the command would look like</p>
+				<p style="text-align:left;">p {</p>
+				<p style="text-align:left;">position: relative;</p>
+				<p style="text-align:left;">top: 40px;</p>
+				<p style="text-align:left;">}</p>
+				<p>Just as a for instance.</p>
+				<p>Below is a breakdown of the difference between each of them...</p>
+				<h1>Static</h1>
+				<p>So static positioning just says that this element will just stack below the element above it, like the paragraphs you are reading now. Just the normal flow of things. It really is that simple.</p>
+				<p>You don't actually have to set position: static to use this as it is the default setting.</p>
+				
+				<h1>Relative</h1/>
+				<p style="position: relative; left: 55px; top: 35px;">Relative positioning moves an HTML element relative to where it <em>would have been</em> in the static (normal) flow of things. So for instance, this paragraph should be moved 55px to the right and down 35px by adding</p>
+				<p style="text-align:left;">p {</p>
+				<p style="text-align:left;">position:relative;</p>
+				<p style="text-align:left;">top: 35px;</p>
+				<p style="text-align:left;">left: 55px;</p>
+				<p style="text-align:left;">}</p>
+				
+				<h1>Absolute</h1>
+				<p>Absolute positioning removes an element from the normal flow 
+				of a web page and uses offset properties to position itself within the content, like the words</p>
+				<p>"Aw Yea, Absolute, Yall"</p>
+				<p>hidden in plain sight somewhere on this page - can you find it?</p>
+				<p style="position: absolute; left: 55px; top: 305px;">Aw Yea, Absolute, Yall</p>
+				<p>by adding this code</p>
+				<p style="text-align:left;">p {</p>
+				<p style="text-align:left;">position: absolute;</p>
+				<p style="text-align:left;">top: 305px;</p>
+				<p style="text-align:left;">left: 55px;</p>
+				<p style="text-align:left;">}</p>
+				
+				<h1>Fixed</h1>
+				<p>Fixed position will remove your element from normal flow, but unlike absolute, it will keep you content where you tell it to stay <em>in the browser</em> instead of in the content. You'll never guess where my example of the below code is...</p>
+				<p style="position: fixed; right: 0; top: 0;">Aw Yea, Fixed, Yall</p>
+				<p style="text-align:left;">p {</p>
+				<p style="text-align:left;">position: fixed;</p>
+				<p style="text-align:left;">top: 0;</p>
+				<p style="text-align:left;">right: 0;</p>
+				<p style="text-align:left;">}</p>	
+			</div>
+			
+			</td>
+		</tr>
+	</table>
+		
+	<div class="footer">
+			<p>
+				<a href="https://github.com/davidhostios"><img src="../imgs/githublogo-sized.png" alt="GitHub Logo"/></a>
+  				<a href="https://twitter.com/davidhostios"><img src="../imgs/twitterlogo-resized.png" alt="Twitter Logo"/></a>
+  				<a href="https://www.linkedin.com/in/david-hostios-42620121?trk=hp-identity-name"><img src="../imgs/linkedinlogo-resized.png" alt="LinkedIn Logo"/></a>
+			</p>
+		<p>&copy; David Hostios 2016</p>
+	</div>
+
+</body>
+</html>
